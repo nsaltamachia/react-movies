@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+#movie-image-card {
+    height: 60vh;
+    /* width: 30vw; */
+    border-radius: 20px;
+}
+
+#movie-info-card {
+    display: inline-block;
+    margin-top: 50%;
+    width: 70%;
+    height: 20vh;
+    border-radius: 20px;
+    border: rgb(255, 187, 0) 2px solid;
+    background-color: rgba(58, 57, 57, 0.75);
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    
+}
+
+p {
+    padding: 10px;
+}

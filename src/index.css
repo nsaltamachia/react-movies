@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1 {
+    color: rgb(255, 187, 0);
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}

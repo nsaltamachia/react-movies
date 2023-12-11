@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+#all-actors-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+#all-actors-container > a {
+    border: rgb(255, 187, 0) 2px solid;
+    border-radius: 20px;
+}
+
+h1 {
+    color: rgb(255, 187, 0);
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+nav {
+    margin-top: 15px;
+}
+nav > a {
+    color: rgb(124, 123, 123);
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin: 0;
+    padding: 10px;
+}
+
+nav > a:hover {
+    color: rgb(255, 187, 0);
+}
+
+nav > a:active {
+    color: rgb(255, 187, 0);
+}
+
+.nav-separator {
+    color: rgb(255, 187, 0);
+    font-size: 1.5em; /* change size */
+    /* add more styles as needed */
+}

@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+nav {
+    margin-top: 15px;
+}
+nav > a {
+    color: rgb(124,123,123);
+    transition: color 0.3s ease-in-out;
+
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin: 0;
+    padding: 10px;
+}
+
+nav > a:hover {
+    color: rgb(255, 187, 0);
+    transition: color 0.3s ease-in-out;
+}
+
+.active {
+    color: rgb(255, 187, 0) !important;
+}
+
+.nav-separator {
+    color: rgb(255, 187, 0);
+    font-size: 1.5em; /* change size */
+    /* add more styles as needed */
+}
+
+nav > a.active:not(:hover) {
+    color: rgb(124,123,123);
+    transition: color 0.3s ease-in-out;
+}

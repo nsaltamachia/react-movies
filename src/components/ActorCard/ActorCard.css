@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+#actor-image-card {
+    height: 40vh;
+    border-radius: 20px;
+}
+
+#actor-info-card {
+    display: inline-block;
+    margin-top: 30%;
+    width: 70%;
+    height: 30%;
+    padding: 20px 0px;
+    border-radius: 20px;
+    border: rgb(255, 187, 0) 2px solid;
+    background-color: rgba(58, 57, 57, 0.75);
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    font-size: 1.75em;
+    letter-spacing: 1px;
+}
