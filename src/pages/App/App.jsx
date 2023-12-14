@@ -1,6 +1,6 @@
 
 import './App.css';
-import { useState } from "react";
+import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import LoginPage from '../LoginPage/LoginPage';
 import ActorListPage from '../ActorListPage/ActorListPage';
@@ -13,15 +13,17 @@ import '../../components/NavBar/NavBar.css';
 
 
 export default function App() {
-  const [user, setUser] = useState({});
+  const [user, setUser] = useState(null);
 
-    
+  const handleLogin = (user) => {
+    setUser(user);
+    }
 
   return (
     <main className="App">
       {user ?
         <>
-          <NavBar />
+          <NavBar user={user} />
           <Routes>
             <Route path="/actors" element={<ActorListPage />} />
             <Route path="/movies" element={<MoviesListPage />} />
@@ -29,7 +31,7 @@ export default function App() {
           </Routes>
         </>
         :
-        <LoginPage />
+        <LoginPage onLogin={handleLogin} />
       }
     </main>
   );
